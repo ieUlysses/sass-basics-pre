@@ -1,0 +1,79 @@
+@use "sass:math";
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+};
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+};
+
+/* Grid-gaps */
+@each $key, $val in $grid-gaps {
+    .gap-#{$key} > *{
+        padding: $val;
+    }
+    .gap-#{$key}{
+        margin-left: -$val;
+        margin-right: -$val;
+    }
+}
+
+/* Justify content */
+@each $val in $layout-values {
+    .justify-#{$val}{
+        justify-content: $val;
+    }
+};
+
+
+@include xs{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-xs{
+            @include breakpoint-utils;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+};
+
+@include sm{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-sm{
+            @include breakpoint-utils;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+};
+
+@include md{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-md{
+            @include breakpoint-utils;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+};
+
+@include lg{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-lg{
+            @include breakpoint-utils;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+};
+
+@include xl{
+    @for $i from 1 through $grid-columns{
+        .col-#{$i}-xl{
+            @include breakpoint-utils;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
+;

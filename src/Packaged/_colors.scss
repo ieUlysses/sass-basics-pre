@@ -1,0 +1,35 @@
+/* Creates color classes  */
+/* .text-#{primary} => .text-primary */
+
+@each $key, $val in $colors{
+    .text-#{$key}{
+        color:$val;
+    }
+    .border-#{$key}{
+        border:$base-border-thickness solid $val;
+    }
+
+    .bg-#{$key}{
+        background-color: $val;
+    }
+}
+
+
+$colors: (
+    "primary":$primary,
+    "secondary":$secondary,
+    "tertiary":$tertiary,
+    
+    "info":$info,
+    "error":$error,
+    "warning":$warning,
+    
+    "lightBlue":#8ECAE6,
+    "blue":#219EBC,
+    "darkBlue":#023047,
+    "yellow":#FFB703,
+    "orange":#FB8500,
+
+);
+
+

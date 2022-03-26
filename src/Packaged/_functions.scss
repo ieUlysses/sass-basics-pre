@@ -1,0 +1,14 @@
+@function complimentary-color($color){
+    $compliment: complement($color);
+    //$complimentary-colorpliment:lighten($compliment ,5%);
+    @return $compliment
+
+};
+
+@function dark-comp($color){
+    $compliment: complement($color);
+    $dark-compliment:darken($compliment ,20%);
+
+    @return $dark-compliment
+
+}

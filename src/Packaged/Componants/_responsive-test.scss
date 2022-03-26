@@ -1,0 +1,28 @@
+.responsive-box{
+
+    width: 16rem;
+    height: 16rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @include xs{
+        background-color: $lightBlue;
+    }
+    @include sm{
+        background-color: $blue;
+    }
+    @include md{
+        background-color: $darkBlue;
+    }
+    @include lg{
+        background-color: $yellow;
+    }
+    @include xl{
+        background-color: $orange;
+    }
+    
+}
+

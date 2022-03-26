@@ -1,0 +1,90 @@
+//colors
+$primary:      #0B0D17;
+$secondary:    #d0d6f9;
+$tertiary:     #fff;
+
+$info:  rgba(0, 0, 255, 0.678);
+$warning:   rgba(255, 166, 0, 0.664);
+$error: rgba(255, 0, 0, 0.692);
+
+
+$lightBlue:#8ECAE6;
+$blue:#219EBC;
+$darkBlue:#023047;
+$yellow:#FFB703;
+$orange:#FB8500;
+
+$colors: (
+    "primary":$primary,
+    "secondary":$secondary,
+    "info":$info,
+    "error":$error,
+    "warning":$warning,
+
+    "lightBlue":#8ECAE6,
+    "blue":#219EBC,
+    "darkBlue":#023047,
+    "yellow":#FFB703,
+    "orange":#FB8500,
+
+);
+
+
+//Typography
+$heading:      "Bellefair Regular";
+$body:         "Barlow Condensed";
+//Font-size
+
+
+$fs1:          150px;
+$fs2:          100px;
+$fs3:          56px;
+$fs4:          32px;
+$fs5:          28px; /* Doubles for subheading 1 + heading5 */
+$fs6:           16px;
+$fs7:           14px;     
+
+
+/* Sizes map... not needed */
+$font-sizes:(
+
+    "fs1":$fs1,
+    "fs2":$fs2,
+    "fs3":$fs3,
+    "fs4":$fs4,
+    "fs5":$fs5,
+    "fs6":$fs6,
+    "fs7":$fs7,
+
+);
+
+
+//letter Spacing
+$letterS1:  4.75px;
+$letterS2:  2.7px;
+$letterS3:  2.35px;
+
+//padding-margin
+$base-padding:0.75rem;
+$base-margin:0.75rem;
+
+//borders
+$base-border-thickness:1px;
+$base-border-radius:13px;
+
+
+
+$grid-columns: 12;
+
+$grid-gaps: (
+    "0": 0,
+    "1": 10px, 
+    "2": 20px,
+    "3": 30px,
+);
+
+$layout-values: flex-start, flex-end, center, space-between, space-around;
+
+$active: #fff;
+$hover: rgba(255, 255, 255, 0.5);
+$idle:rgba(255, 255, 255, 0.17);

@@ -1,0 +1,65 @@
+
+@each $key, $val in $colors{
+    .btn-filled-#{$key}{
+        @include btn($val);
+        border: none;
+
+        &:hover{
+            @include activeShadow($val);
+            background-color: lighten($val, $amount: 5);
+        }
+    }
+
+    .btn-outlined-#{$key}{
+        @include btn(white);
+        border: $base-border-thickness solid $val;
+
+        &:hover{
+            @include activeShadow($val);
+            background-color: $val;
+            color: white;
+        }
+    }
+
+    .btn-compliment-#{$key}{
+        @include btn($val);
+        border: solid $base-border-thickness $val;
+        background-color: transparent;
+        color: complimentary-color($val);
+
+        &:hover{
+            @include activeShadow($val);
+            font-weight: bolder;
+        }
+    }
+}
+
+
+.btn-explore{
+    @include centerContent;
+    background-color: $tertiary;
+
+    width:14rem;
+    height: 14rem;
+
+    border: $base-border-thickness solid $tertiary;
+
+    border-radius: 100%;
+
+    padding: $base-padding * 7 $base-padding * 7;
+
+    cursor: pointer;
+
+    &:hover{
+        @include explore-button(70px)
+    }
+
+    .btn-text{
+        @include typography($fs3,0, $primary, $heading);
+
+        text-align: center
+
+
+    };
+    
+}

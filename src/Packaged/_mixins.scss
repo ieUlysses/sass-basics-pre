@@ -1,0 +1,50 @@
+/* box-shadow:4px 4px 7px $info; */
+
+@mixin btn ($bg-color){
+    display: inline-block;
+    cursor: pointer;
+    font-family: $body;
+    border-radius: $base-border-radius;
+    margin: $base-margin;
+    padding: $base-padding $base-padding ;
+    letter-spacing: $letterS1;
+    text-align: center;
+    text-transform: uppercase;    
+    background-color: $bg-color;
+}
+
+
+@mixin activeShadow( $color) {
+    box-shadow:4px 4px 7px $color
+};
+
+
+@mixin typography ($font-size,$letter-spacing, $color, $font-family) {
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    color: $color;
+    font-family: $font-family;
+}
+
+@mixin upperCase {
+    text-transform: uppercase;
+};
+
+@mixin breakpoint-utils {
+    box-sizing: border-box;
+            flex-grow: 0;
+            
+}
+
+@mixin centerContent($direction :"row") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin explore-button ($size) {
+    box-shadow:
+    0px 0px 0px $size rgba(255, 255, 255, 0.16);
+}
+

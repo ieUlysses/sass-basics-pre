@@ -1,0 +1,45 @@
+
+
+.card{
+    display: block;
+    padding: $base-padding;
+    margin: $base-margin;
+    border: $base-border-thickness solid $primary;
+    border-radius: $base-border-radius;
+   
+    //background-color: $primary;
+
+    .card-title{
+        font-size: $fs4;
+        font-family: $heading;
+        text-transform: uppercase;
+        color: $primary;
+        letter-spacing: $letterS2;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: $base-padding;
+    }
+
+    .card-body{
+        font-size: $fs6;
+        font-family: $body;
+        color: $primary;
+    }
+
+    .card-body button{
+        font-family: $body;
+        border: $base-border-thickness solid $info;
+        border-radius: $base-border-radius;
+        margin: $base-margin;
+        padding: $base-padding;
+        color: $info;
+        letter-spacing: $letterS1;
+        text-align: center;
+        background-color: $tertiary;
+    }
+    
+    
+}
+
+
+

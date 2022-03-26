@@ -1,0 +1,54 @@
+.heading-1{
+    @include typography($fs1, 0, $tertiary, $heading);
+    @include upperCase;
+}
+.heading-2{
+    @include typography($fs2, 0, $tertiary, $heading);
+    @include upperCase;
+}
+.heading-3{
+    @include typography($fs3,0, $tertiary, $heading);
+    @include upperCase;
+}
+.heading-4{
+    @include typography($fs4,0, $tertiary, $heading);
+    @include upperCase;
+}
+
+.heading-5{
+    @include typography($fs5,$letterS1, $secondary, $body);
+    @include upperCase;
+}
+
+.sub-heading-1{
+    @include typography($fs5,0, $tertiary, $heading);
+    @include upperCase;
+}
+.sub-heading-2{
+    @include typography($fs7,$letterS3, $tertiary, $body);
+    @include upperCase;
+}
+
+.nav-text{
+    @include typography($fs6,$letterS2, $active, $body);
+    @include upperCase;
+}
+
+.nav-text-mobile{
+    @include typography($fs6,$letterS2, $tertiary, $body);
+    @include upperCase;
+
+    .active{
+        border-right: 2px solid rgb(255, 255, 255);
+    }
+
+    &:hover{
+        border-right: 2px solid rgba(255, 255, 255, 0.747);
+    }
+}
+
+@each $key, $val in $colors {
+    .text-#{$key} {
+        color: $val
+    }
+}
